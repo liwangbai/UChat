@@ -15,6 +15,8 @@
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
             android:gravity="center">
 
             <ImageView
@@ -22,7 +24,15 @@
                 android:layout_width="24dp"
                 android:layout_height="24dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/weixin_normal" />
+
+            <TextView
+                android:id="@+id/homeTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_tab1"
+                android:textColor="#222222"
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -30,6 +40,8 @@
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
             android:gravity="center">
 
             <ImageView
@@ -37,7 +49,15 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/contact_list_normal" />
+
+            <TextView
+                android:id="@+id/friendTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_tab2"
+                android:textColor="#222222"
+                android:textSize="12sp"/>
         </LinearLayout>
 
         <LinearLayout
@@ -45,6 +65,8 @@
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
             android:gravity="center">
 
             <ImageView
@@ -52,7 +74,15 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/find_normal" />
+
+            <TextView
+                android:id="@+id/moreTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_tab3"
+                android:textColor="#222222"
+                android:textSize="12sp"/>
 
         </LinearLayout>
 
@@ -61,6 +91,8 @@
             android:layout_width="0dp"
             android:layout_height="55dp"
             android:layout_weight="1"
+            android:orientation="vertical"
+            android:background="#F5F5F5"
             android:gravity="center">
 
             <ImageView
@@ -68,7 +100,15 @@
                 android:layout_width="22dp"
                 android:layout_height="22dp"
                 android:layout_gravity="center"
-                android:src="@mipmap/ic_launcher" />
+                android:src="@mipmap/profile_normal"/>
+
+            <TextView
+                android:id="@+id/meTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/home_tab4"
+                android:textColor="#222222"
+                android:textSize="12sp"/>
         </LinearLayout>
 
     </LinearLayout>

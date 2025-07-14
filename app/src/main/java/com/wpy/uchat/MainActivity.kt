@@ -1,5 +1,6 @@
 package com.wpy.uchat
 
+import android.graphics.Color
 import android.net.Uri
 import android.os.Bundle
 import android.util.Log
@@ -88,7 +89,6 @@ class MainActivity : TabBtnClickCallback, BaseBVMActivity<ActivityMainBinding, M
                 }
                 3 -> {
                     addFragment(fragmentManager, MeFragment())
-                    window.statusBarColor = ContextCompat.getColor(this, android.R.color.white)
                 }
             }
             mViewModel.mCurrentTab = position

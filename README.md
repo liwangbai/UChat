@@ -1,4 +1,8 @@
-# PigIceCream
+# UChat
+
+    A locally interactive app that imitates WeChat pages
+    
+    一款模仿微信页面的本地互动应用程序
 
 ## 主要技术
 

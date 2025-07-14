@@ -1,10 +1,12 @@
 package com.wpy.customwidget
 
 import android.content.Context
+import android.graphics.Color
 import android.util.AttributeSet
 import android.view.LayoutInflater
 import android.widget.ImageView
 import android.widget.LinearLayout
+import android.widget.TextView
 import com.wpy.utils.ext.clickOpt
 
 class BaseTabView @JvmOverloads constructor(
@@ -20,6 +22,11 @@ class BaseTabView @JvmOverloads constructor(
     private lateinit var friendIv: ImageView
     private lateinit var moreIv: ImageView
     private lateinit var meIv: ImageView
+
+    private lateinit var homeTv: TextView
+    private lateinit var friendTv: TextView
+    private lateinit var moreTv: TextView
+    private lateinit var meTv: TextView
 
     private lateinit var listener: TabBtnClickCallback
     init {
@@ -37,37 +44,65 @@ class BaseTabView @JvmOverloads constructor(
         friendIv = findViewById(R.id.friendIv)
         moreIv = findViewById(R.id.moreIv)
         meIv = findViewById(R.id.meIv)
+
+        homeTv = findViewById(R.id.homeTv)
+        friendTv = findViewById(R.id.friendTv)
+        moreTv = findViewById(R.id.moreTv)
+        meTv = findViewById(R.id.meTv)
     }
 
     fun setClickListener(callback: TabBtnClickCallback) {
         listener = callback
         homeBtn.clickOpt {
-            homeIv.setImageResource(R.mipmap.ic_launcher)
-            friendIv.setImageResource(R.mipmap.ic_launcher)
-            moreIv.setImageResource(R.mipmap.ic_launcher)
-            meIv.setImageResource(R.mipmap.ic_launcher)
+            homeIv.setImageResource(R.mipmap.weixin_pressed)
+            friendIv.setImageResource(R.mipmap.contact_list_normal)
+            moreIv.setImageResource(R.mipmap.find_normal)
+            meIv.setImageResource(R.mipmap.profile_normal)
+
+            homeTv.setTextColor(Color.parseColor("#FF07C160"))
+            friendTv.setTextColor(Color.parseColor("#222222"))
+            moreTv.setTextColor(Color.parseColor("#222222"))
+            meTv.setTextColor(Color.parseColor("#222222"))
+
             listener.invoke(0)
         }
         friendBtn.clickOpt {
             listener.invoke(1)
-            homeIv.setImageResource(R.mipmap.ic_launcher)
-            friendIv.setImageResource(R.mipmap.ic_launcher)
-            moreIv.setImageResource(R.mipmap.ic_launcher)
-            meIv.setImageResource(R.mipmap.ic_launcher)
+            homeIv.setImageResource(R.mipmap.weixin_normal)
+            friendIv.setImageResource(R.mipmap.contact_list_pressed)
+            moreIv.setImageResource(R.mipmap.find_normal)
+            meIv.setImageResource(R.mipmap.profile_normal)
+
+            homeTv.setTextColor(Color.parseColor("#222222"))
+            friendTv.setTextColor(Color.parseColor("#FF07C160"))
+            moreTv.setTextColor(Color.parseColor("#222222"))
+            meTv.setTextColor(Color.parseColor("#222222"))
+
         }
         moreBtn.clickOpt {
             listener.invoke(2)
-            homeIv.setImageResource(R.mipmap.ic_launcher)
-            friendIv.setImageResource(R.mipmap.ic_launcher)
-            moreIv.setImageResource(R.mipmap.ic_launcher)
-            meIv.setImageResource(R.mipmap.ic_launcher)
+            homeIv.setImageResource(R.mipmap.weixin_normal)
+            friendIv.setImageResource(R.mipmap.contact_list_normal)
+            moreIv.setImageResource(R.mipmap.find_pressed)
+            meIv.setImageResource(R.mipmap.profile_normal)
+
+            homeTv.setTextColor(Color.parseColor("#222222"))
+            friendTv.setTextColor(Color.parseColor("#222222"))
+            moreTv.setTextColor(Color.parseColor("#FF07C160"))
+            meTv.setTextColor(Color.parseColor("#222222"))
+
         }
         meBtn.clickOpt {
             listener.invoke(3)
-            homeIv.setImageResource(R.mipmap.ic_launcher)
-            friendIv.setImageResource(R.mipmap.ic_launcher)
-            moreIv.setImageResource(R.mipmap.ic_launcher)
-            meIv.setImageResource(R.mipmap.ic_launcher)
+            homeIv.setImageResource(R.mipmap.weixin_normal)
+            friendIv.setImageResource(R.mipmap.contact_list_normal)
+            moreIv.setImageResource(R.mipmap.find_normal)
+            meIv.setImageResource(R.mipmap.profile_pressed)
+
+            homeTv.setTextColor(Color.parseColor("#222222"))
+            friendTv.setTextColor(Color.parseColor("#222222"))
+            moreTv.setTextColor(Color.parseColor("#222222"))
+            meTv.setTextColor(Color.parseColor("#FF07C160"))
         }
     }
 

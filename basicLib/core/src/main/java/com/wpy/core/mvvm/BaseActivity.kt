@@ -1,5 +1,6 @@
 package com.wpy.core.mvvm
 
+import android.graphics.Color
 import android.os.Bundle
 import androidx.annotation.LayoutRes
 import androidx.appcompat.app.AppCompatActivity
@@ -28,7 +29,8 @@ abstract class BaseActivity: AppCompatActivity() {
     }
 
     protected open fun initView(savedInstanceState: Bundle?){
-        window.statusBarColor = ContextCompat.getColor(this, R.color.white)
+        window.statusBarColor = Color.parseColor("#F5F5F5")
+        window.navigationBarColor = Color.parseColor("#F5F5F5")
     }
 
     protected open fun initData() {

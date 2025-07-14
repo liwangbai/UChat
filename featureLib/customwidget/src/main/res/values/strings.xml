@@ -3,6 +3,11 @@
 
     <string name="img_desc1">PigIceCream</string>
 
+    <string name="home_tab1">微信</string>
+    <string name="home_tab2">通讯录</string>
+    <string name="home_tab3">发现</string>
+    <string name="home_tab4">我</string>
+
     <string name="home">首页</string>
     <string name="debauched_man">避雷</string>
     <string name="message">消息</string>

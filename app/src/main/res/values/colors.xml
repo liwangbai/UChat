@@ -9,8 +9,8 @@
     <color name="white">#FFFFFFFF</color>
     <color name="black_overlay">#66000000</color>
 
-    <color name="colorPrimary">#FFF98736</color>
-    <color name="background">#FFF5F5F5</color>
+    <color name="colorPrimary">#FF07C160</color>
+    <color name="background">#F5F5F5</color>
     <color name="textPrimaryColor">#E5000000</color>
     <color name="textSecondaryColor">#FF707070</color>
     <color name="lineColor">#FF949494</color>
