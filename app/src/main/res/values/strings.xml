@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">UChat</string>
+
+    <string name="img_desc1">UChat</string>
+
+    <string name="home">首页</string>
+    <string name="debauched_man">避雷</string>
+    <string name="message">消息</string>
+    <string name="create">创作</string>
+    <string name="more">发现</string>
+    <string name="me">我</string>
+    <string name="suitability">匹配度</string>
+    <string name="time">时间</string>
+    <string name="filter">筛选</string>
+    <string name="title_network">network</string>
+    <string name="cancel">取消</string>
+    <string name="history_search">历史搜索</string>
+    <string name="history_clear">清空历史搜索</string>
+</resources>

@@ -1,0 +1,19 @@
+dependencyResolutionManagement {
+    repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+    repositories {
+        google()
+        mavenCentral()
+        jcenter() // Warning: this repository is going to shut down soon
+    }
+}
+rootProject.name = "UChat"
+include ':app'
+include ':basicLib:retrofit'
+include ':basicLib:coil'
+include ':basicLib:utils'
+include ':business:home'
+include ':business:me'
+include ':IProvider'
+include ':basicLib:arouter'
+include ':featureLib:customwidget'
+include ':basicLib:core'
